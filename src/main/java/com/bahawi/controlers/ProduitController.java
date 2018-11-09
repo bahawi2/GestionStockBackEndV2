@@ -3,6 +3,7 @@ package com.bahawi.controlers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +19,7 @@ import com.bahawi.services.IProuduitService;
 
 @RestController
 @RequestMapping("/api/produit")
-@CrossOrigin
+
 public class ProduitController {
 	@Autowired
 	private IProuduitService produitservice;

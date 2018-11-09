@@ -31,28 +31,25 @@ public class GestionStockBackEndV2Application implements CommandLineRunner {
 	}
 	@Override
 	public void run(String... args) throws Exception {
-//		
-//		produitrepo.save(new Produit("Livre",50,20));
-//		produitrepo.save(new Produit("Cahier",70,120.5f));
-//		produitrepo.save(new Produit("Stylo",54,30.76f));
-//		
-//		
-//		Role role2=new Role("ADMIN");
-//		Role role1=new Role("NORMAL");
-//		rolerepository.save(role1);
-//		rolerepository.save(role2);
-//		User user1=new User("user", "1234", true);
-//		
-//		
-//		List<Role> roles = new ArrayList<Role>();
-//		user1.setRoles(Arrays.asList(role1));
-//		userrespository.save(user1);
-//		
-//		User user2=new User("root", "root", true);
-//		user2.setRoles(Arrays.asList(role1,role2));
-//		userrespository.save(user2);
-//		
-//		
+	/*	
+		produitrepo.save(new Produit("Livre",50,20));
+		produitrepo.save(new Produit("Cahier",70,120.5f));
+		produitrepo.save(new Produit("Stylo",54,30.76f));
 		
+		Role role1=new Role("ROLE_NORMAL");	
+		rolerepository.save(role1);
+		User user1=new User("user", "1234", true);
+		List<Role> roles = new ArrayList<Role>();
+		user1.setRoles(Arrays.asList(role1));
+		userrespository.save(user1);
+		
+		Role role2=new Role("ROLE_ADMIN");
+		rolerepository.save(role2);
+		User user2=new User("root", "root", true);
+		user2.setRoles(Arrays.asList(role1,role2));
+		userrespository.save(user2);
+		
+		*/
+
 	}
 }
