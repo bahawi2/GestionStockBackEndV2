@@ -35,14 +35,14 @@ public class SpringSecurityConf extends WebSecurityConfigurerAdapter{
 	
 	protected void configure(HttpSecurity http) throws Exception{
 		  // The pages does not require login
-        http.authorizeRequests().antMatchers("/api/user/**","/login/**", "/logout/**").permitAll();
+        http.authorizeRequests().antMatchers("/login/**", "/logout/**").permitAll();
  
 		http
 		.httpBasic()
 			.and()
 				.authorizeRequests()
-					.antMatchers("/api/produit/**").hasRole("ADMIN")
-					.antMatchers("/**").hasRole("ADMIN").
+					.antMatchers("/api/**").hasRole("NORMAL")
+					.antMatchers("/usercrud","/**").hasRole("ADMIN").
 					and().csrf().disable().headers().frameOptions().disable();
 		/*http.httpBasic();
 		 http.csrf().disable();

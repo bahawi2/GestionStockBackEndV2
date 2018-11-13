@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import com.bahawi.entities.Produit;
 @Repository
-@PreAuthorize("hasRole('ROLE_ADMIN')")
+//@PreAuthorize("hasRole('ROLE_ADMIN')")
 public interface ProduitRepository extends JpaRepository<Produit, Long> {
 
 }

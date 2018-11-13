@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin
 public class UserController {
-	@RequestMapping("/api/user")
+	@RequestMapping("/login")
 	public Principal user(Principal user)
 	{
 		return user;
